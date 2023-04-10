@@ -19,7 +19,7 @@ static void latch(u8 data)
 	M_Dio_void_setPinValue(LCD_EN, DIO_HIGH);
 	_delay_us(1000);
 	M_Dio_void_setPinValue(LCD_EN, DIO_LOW);
-	_delay_ms(5);
+	//_delay_ms(5);
 	M_Dio_void_setPinValue(LCD_D7, GET_BIT(data, 3));
 	M_Dio_void_setPinValue(LCD_D6, GET_BIT(data, 2));
 	M_Dio_void_setPinValue(LCD_D5, GET_BIT(data, 1));
@@ -28,7 +28,7 @@ static void latch(u8 data)
 	M_Dio_void_setPinValue(LCD_EN, DIO_HIGH);
 	_delay_us(1000);
 	M_Dio_void_setPinValue(LCD_EN, DIO_LOW);
-	_delay_ms(5);
+	//_delay_ms(5);
 	#elif
 	M_Dio_void_setPinValue(LCD_D7, GET_BIT(data, 7));
 	M_Dio_void_setPinValue(LCD_D6, GET_BIT(data, 6));
