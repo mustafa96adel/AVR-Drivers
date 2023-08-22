@@ -21,7 +21,7 @@ u8 M_Timer_u8_GetCounts(void);
 
 void M_Timer0_void_setDelayTimeMilliSec(u32 delay_value);
 
-void M_Timer0_void_EnablOverFlowInt(void);
+void M_Timer0_void_EnableOverFlowInt(void);
 
 void M_Timer0_void_DisableOverFlowInt(void);
 
