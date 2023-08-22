@@ -60,14 +60,14 @@ u8 M_u8_Timer_GetCounts(void)
 	return TCNT0;
 }
 
-void M_Timer0_void_EnablOverFloweInt(void)
+void M_Timer0_void_EnableOverFlowInt(void)
 {
-		SET_BIT(TIMSK, 0);
+	SET_BIT(TIMSK, 0);
 }
 
 void M_Timer0_void_DisableOverFlowInt(void)
 {
-		CLR_BIT(TIMSK, 0);
+	CLR_BIT(TIMSK, 0);
 }
 
 void M_Timer0_void_EnabOutCompareleInt(void)
@@ -113,7 +113,7 @@ void M_Timer0_void_setDelayTimeMilliSec(u32 delay_value)
 
 void M_Timer0_void_setOutputCompareCallBack(void(*copy_pf)(void))
 {
-		pf_oc = copy_pf;
+	pf_oc = copy_pf;
 }
 
 M_Timer0_void_setOverFlowCallBack(void(*copy_pf)(void))
